@@ -8,6 +8,11 @@ import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AddProductComponent } from './shop/add-product/add-product.component';
+import { ViewProductComponent } from './shop/view-product/view-product.component';
+import { FormsModule } from '@angular/forms';
+import { EditProductComponent } from './shop/edit-product/edit-product.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +20,17 @@ import { ContactComponent } from './contact/contact.component';
     ShopComponent,
     HomeComponent,
     NavBarComponent,
-    ContactComponent
+    ContactComponent,
+    AddProductComponent,
+    ViewProductComponent,
+    EditProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
